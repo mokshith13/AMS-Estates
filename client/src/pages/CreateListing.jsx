@@ -246,7 +246,7 @@ export default function CreateListing() {
               <input
                 type='number'
                 id='bedrooms'
-                min='1'
+                min='0'
                 max='10'
                 required
                 className='p-3 border border-gray-300 rounded-lg'
@@ -259,7 +259,7 @@ export default function CreateListing() {
               <input
                 type='number'
                 id='bathrooms'
-                min='1'
+                min='0'
                 max='10'
                 required
                 className='p-3 border border-gray-300 rounded-lg'
@@ -302,7 +302,7 @@ export default function CreateListing() {
                   <p>Discounted price</p>
 
                   {formData.type === 'rent' && (
-                    <span className='text-xs'>($ / month)</span>
+                    <span className='text-xs'>(Rs. / month)</span>
                   )}
                 </div>
               </div>
